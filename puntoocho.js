@@ -30,8 +30,12 @@ let planetas = Array(planetaUno, planetaDos);
 function analizarPlanetas(planetas) {
   //recorrer un arreglo
   let mapa = planetas.map(function (planeta) {
-    return(planeta)
-  })
-  return mapa
+    return planeta.volumenAgua;
+  });
+  let suma = 0;
+  mapa.forEach(function (volumenAgua) {
+    suma = suma+volumenAgua
+  });
+  return suma;
 }
-console.log(analizarPlanetas(planetas))
+console.log(analizarPlanetas(planetas));
