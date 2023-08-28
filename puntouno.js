@@ -8,3 +8,22 @@
 // √(𝑥2 − 𝑥1)
 // 2 + (𝑦2 − 𝑦1)
 // 2
+
+//ENTRADAS
+let coordenadaxPlanetaUno = 10
+let coordenadayPlanetaUno = -50
+
+let coordenadaxPlanetaDos = 80
+let coordenadayPlanetaDos = 0
+
+//PROCESO DEL PROBLEMA
+// let restasCoordenadasx = coordenadaxPlanetaDos - coordenadaxPlanetaUno
+// let restasCoordenadasy = coordenadayPlanetaDos - coordenadayPlanetaUno
+
+// let potenciasX = Math.pow(restasCoordenadasx,2)
+// let potenciasY = Math.pow(restasCoordenadasy,2)
+
+
+let distaciaCalculada = Math.sqrt((Math.pow(coordenadaxPlanetaDos - coordenadaxPlanetaUno,2)) + ( Math.pow(coordenadayPlanetaDos - coordenadayPlanetaUno,2)))
+
+console.log(`La Distancia Calculada es ${distaciaCalculada}`)
