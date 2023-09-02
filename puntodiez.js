@@ -11,3 +11,9 @@
 // energía. Finalmente, una función callback debe permitir entregar la
 // sumatoria de niveles de energía entregados por los alimentos vegetales
 // consumidos en la dieta de Grogu.
+
+let alimento = {
+    nombre : 'Tomate',
+    tipo : 'vegetal',
+    energia : 100
+}

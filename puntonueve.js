@@ -37,7 +37,7 @@ crearPadawan("grogu", "yodora", 10, 30, function (padawan) {
 //Funcion flecha
 
 //declaracion de funcion principal
-function crearPadawan(nombre, planeta, edad, estatura, clasificarPadwan) {
+    crearPadawan = (nombre, planeta, edad, estatura, clasificarPadwan) =>{
     setTimeout(() => {
       //logica de la funcion principal
       let padawan = {
@@ -51,7 +51,7 @@ function crearPadawan(nombre, planeta, edad, estatura, clasificarPadwan) {
   }
   
   //llamar a la funcion principal
-  crearPadawan("grogu", "yodora", 10, 30, function (padawan) {
+  crearPadawan("grogu", "yodora", 1000, 30, padawan => {
     if (padawan.edad < 15) {
       console.log(
         `${padawan.nombre} tienes ${padawan.edad} años vas a la clase manejo de la fuerza`
