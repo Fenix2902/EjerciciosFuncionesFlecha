@@ -34,27 +34,25 @@ let dia7 = {
 
 let diasLunares = [dia1, dia2,dia3,dia4,dia5,dia6,dia7];
 
-function temperaturaMedia(diasLunares) {
-    let temperaturasMedias = diasLunares.map(function(dia) {
-      return (dia.maxTemp + dia.minTemp) / 2;
-    });
+// function temperaturaMedia(diasLunares) {
+//     let temperaturasMedias = diasLunares.map(function(dia) {
+//       return (dia.maxTemp + dia.minTemp) / 2;
+//     });
   
-    let suma = 0;
-    for (let temperaturaMedia of temperaturasMedias) {
-      suma += temperaturaMedia;
-    }
+//     let suma = 0;
+//     for (let temperaturaMedia of temperaturasMedias) {
+//       suma += temperaturaMedia;
+//     }
   
-    return suma / temperaturasMedias.length;
-  }
+//     return suma / temperaturasMedias.length;
+//   }
   
-  console.log(temperaturaMedia(diasLunares));
+//   console.log(temperaturaMedia(diasLunares));
 
   //funcion flecha
 
   let temperaturamedia=(diasLunares)=>{
-    let temperaturasMedias = diasLunares.map((dia) => {
-        return (dia.maxTemp + dia.minTemp) / 2;
-      });
+    let temperaturasMedias = diasLunares.map((dia) => (dia.maxTemp + dia.minTemp) / 2);
     
       let suma = 0;
       for (let temperaturaMedia of temperaturasMedias) {

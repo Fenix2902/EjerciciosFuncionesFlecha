@@ -96,58 +96,68 @@ let planetas = Array(
 
 // • Sumar la cantidad total de agua de los 15 planetas
 
-function sumaVolumenAgua(planetas) {
-  //recorrer un arreglo
-  let volumenes = planetas.map(function (planeta) {
-    return planeta.volumenAgua;
-  });
-  let suma = 0;
-  volumenes.forEach(function (volumen) {
-    suma = suma + volumen;
-  });
-  return suma;
-}
-console.log(
-  `El total del volumen de agua de los planetas es de: `,
-  sumaVolumenAgua(planetas).toFixed(2),
-  `resultado con funcion tradicional`
-);
+// function sumaVolumenAgua(planetas) {
+//   //recorrer un arreglo
+//   let volumenes = planetas.map(function (planeta) {
+//     return planeta.volumenAgua;
+//   });
+//   let suma = 0;
+//   volumenes.forEach(function (volumen) {
+//     suma = suma + volumen;
+//   });
+//   return suma;
+// }
+// console.log(
+//   `El total del volumen de agua de los planetas es de: `,
+//   sumaVolumenAgua(planetas).toFixed(2),
+//   `resultado con funcion tradicional`
+// );
 
-// • Sumar y multiplicar por 100 el total de oxigeno de los 15 planetas
+// // • Sumar y multiplicar por 100 el total de oxigeno de los 15 planetas
 
-function sumaOxigeno(planetas) {
-  //recorrer un arreglo
-  let oxigenos = planetas.map(function (planeta) {
-    return planeta.nivelOxigeno;
-  });
-  let suma = 0;
-  oxigenos.forEach(function(oxigeno){
-    suma=suma+oxigeno});
-  return suma;
-}
-console.log(
-  `El total del Oxigeno de los planetas es de: `,
-  sumaOxigeno(planetas).toFixed(2),
-  `y este multiplicado por 100 es: `,
-  sumaOxigeno(planetas) * 100,`***este resultado se realiza con funcion tradicional***`
-);
+// function sumaOxigeno(planetas) {
+//   //recorrer un arreglo
+//   let oxigenos = planetas.map(function (planeta) {
+//     return planeta.nivelOxigeno;
+//   });
+//   let suma = 0;
+//   oxigenos.forEach(function(oxigeno){
+//     suma=suma+oxigeno});
+//   return suma;
+// }
+// console.log(
+//   `El total del Oxigeno de los planetas es de: `,
+//   sumaOxigeno(planetas).toFixed(2),
+//   `y este multiplicado por 100 es: `,
+//   sumaOxigeno(planetas) * 100,`***este resultado se realiza con funcion tradicional***`
+// );
 
-// • Encontrar si alguno de los 15 planetas tiene un nivel de oxigeno
-// negativo y de ser así mostrar la información general de este
+// // • Encontrar si alguno de los 15 planetas tiene un nivel de oxigeno
+// // negativo y de ser así mostrar la información general de este
 
-function oxigenoNegativo(planetas) {
-  //recorrer un arreglo
-  let oxigenoNegat = planetas.filter(function(planeta) {
-    return planeta.nivelOxigeno < 0});
-    return oxigenoNegat;
-}
-console.log(`Los planetas con oxigeno negativo son: `, oxigenoNegativo(planetas),`***este resultado se realiza con funcion tradicional***`);
+// function oxigenoNegativo(planetas) {
+//   //recorrer un arreglo
+//   let oxigenoNegat = planetas.filter(function(planeta) {
+//     return planeta.nivelOxigeno < 0});
+//     return oxigenoNegat;
+// }
+// console.log(`Los planetas con oxigeno negativo son: `, oxigenoNegativo(planetas),`***este resultado se realiza con funcion tradicional***`);
+
+// // • Encontrar si alguno de los 15 planetas no tiene agua y mostrar la
+// // información general de este
+
+// function sinAgua(planetas) {
+//   //recorrer un arreglo
+//   let sinAgua = planetas.filter(function(planeta){
+//     return planeta.volumenAgua <= 0}); return sinAgua
+// }
+// console.log(`Los planetas sin agua son: `, sinAgua(planetas),`***este resultado se realiza con funcion tradicional***`);
 
 //FUNCION FLECHA
 
 // • Sumar la cantidad total de agua de los 15 planetas
 
-function sumaVolumenAgua(planetas) {
+let sumaVolumenAgua=(planetas) => {
   //recorrer un arreglo
   let volumenes = planetas.map((planeta) => planeta.volumenAgua);
   let suma = 0;
@@ -162,7 +172,7 @@ console.log(
 
 // • Sumar y multiplicar por 100 el total de oxigeno de los 15 planetas
 
-function sumaOxigeno(planetas) {
+let sumaOxigeno =(planetas) =>{
   //recorrer un arreglo
   let oxigenos = planetas.map(planeta => planeta.nivelOxigeno);
   let suma = 0;
@@ -173,17 +183,17 @@ console.log(`El total del Oxigeno de los planetas es de: `, sumaOxigeno(planetas
 // • Encontrar si alguno de los 15 planetas tiene un nivel de oxigeno
 // negativo y de ser así mostrar la información general de este
 
-// function oxigenoNegativo(planetas) {
-//   //recorrer un arreglo
-//   let oxigenoNegat = planetas.filter(planeta => planeta.nivelOxigeno < 0); return oxigenoNegat
-// }
-// console.log(`Los planetas con oxigeno negativo son: `, oxigenoNegativo(planetas));
+let oxigenoNegativo =(planetas)=> {
+  //recorrer un arreglo
+  let oxigenoNegat = planetas.filter(planeta => planeta.nivelOxigeno < 0); return oxigenoNegat
+}
+console.log(`Los planetas con oxigeno negativo son: `, oxigenoNegativo(planetas),`***este resultado se realiza con funcion flecha***`);
 
 // • Encontrar si alguno de los 15 planetas no tiene agua y mostrar la
 // información general de este
 
-// function sinAgua(planetas) {
-//   //recorrer un arreglo
-//   let sinAgua = planetas.filter(planeta => planeta.volumenAgua <= 0); return sinAgua
-// }
-// console.log(`Los planetas sin agua son: `, sinAgua(planetas));
+let sinAgua =(planetas) =>{
+  //recorrer un arreglo
+  let sinAgua = planetas.filter(planeta => planeta.volumenAgua <= 0); return sinAgua
+}
+console.log(`Los planetas sin agua son: `, sinAgua(planetas),`***este resultado se realiza con funcion flecha***`);
