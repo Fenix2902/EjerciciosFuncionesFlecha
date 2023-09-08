@@ -6,37 +6,37 @@
 // repeticiones
 
 // Función para generar un número aleatorio entre un rango específico
-function generarNumeroAleatorio(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+// function generarNumeroAleatorio(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
   
-  // Generar 20 edades y códigos aleatorios
-  let edades = [];
-  let codigos = [];
+//   // Generar 20 edades y códigos aleatorios
+//   let edades = [];
+//   let codigos = [];
   
-  for (let i = 0; i < 20; i++) {
-    edades.push(generarNumeroAleatorio(1, 100)); // Generar edades aleatorias entre 1 y 100
-    codigos.push(generarNumeroAleatorio(1, 1000)); // Generar códigos aleatorios entre 1 y 1000
-  }
+//   for (let i = 0; i < 20; i++) {
+//     edades.push(generarNumeroAleatorio(1, 100)); // Generar edades aleatorias entre 1 y 100
+//     codigos.push(generarNumeroAleatorio(1, 1000)); // Generar códigos aleatorios entre 1 y 1000
+//   }
   
-  // Encontrar la mayor edad y contar las repeticiones
-  let mayorEdad = edades[0];
-  let contadorRepeticiones = 1;
+//   // Encontrar la mayor edad y contar las repeticiones
+//   let mayorEdad = edades[0];
+//   let contadorRepeticiones = 1;
   
-  for (let i = 1; i < edades.length; i++) {
-    if (edades[i] > mayorEdad) {
-      mayorEdad = edades[i];
-      contadorRepeticiones = 1;
-    } else if (edades[i] === mayorEdad) {
-      contadorRepeticiones++;
-    }
-  }
+//   for (let i = 1; i < edades.length; i++) {
+//     if (edades[i] > mayorEdad) {
+//       mayorEdad = edades[i];
+//       contadorRepeticiones = 1;
+//     } else if (edades[i] === mayorEdad) {
+//       contadorRepeticiones++;
+//     }
+//   }
   
-  // Mostrar los resultados
-  console.log("Edades generadas:", edades);
-  console.log("Códigos generados:", codigos);
-  console.log("La mayor edad es:", mayorEdad);
-  console.log("Número de repeticiones de la mayor edad:", contadorRepeticiones);
+//   // Mostrar los resultados
+//   console.log("Edades generadas:", edades);
+//   console.log("Códigos generados:", codigos);
+//   console.log("La mayor edad es:", mayorEdad);
+//   console.log("Número de repeticiones de la mayor edad:", contadorRepeticiones);
     
   //FUNCION FLECHA
 

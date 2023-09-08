@@ -8,10 +8,12 @@
 // • ARQ2556: Nodin Chavdri
 // • ARQ2557: Finn
 
-function obtenerNombre(codigo){
-return codigo.split(":")[1]
-}
-console.log(obtenerNombre("ARQ2556: Nodin Chavdri"))
+
+
+// function obtenerNombre(codigo){
+// return codigo.split(":")[1]
+// }
+// console.log(obtenerNombre("ARQ2556: Nodin Chavdri"))
 
 //Funcion Flecha
 let obtenerNombreFlecha = (codigo) => codigo.split(":")[1]

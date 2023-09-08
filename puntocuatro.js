@@ -6,13 +6,13 @@
 
 let sables = [2, 4, -8, 5, -6,-98,-9];
 
-function conteoEnergiaPositivas(sables) {
-    let positivos = sables.filter(function (sable) {
-         return sable > 0
-    })
-    return positivos.length;
-}
-console.log(`La cantidad de sables Buenos es ${conteoEnergiaPositivas(sables)}`);
+// function conteoEnergiaPositivas(sables) {
+//     let positivos = sables.filter(function (sable) {
+//          return sable > 0
+//     })
+//     return positivos.length;
+// }
+// console.log(`La cantidad de sables Buenos es ${conteoEnergiaPositivas(sables)}`);
 
 //Función flecha
 

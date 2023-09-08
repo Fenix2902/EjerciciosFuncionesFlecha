@@ -9,30 +9,30 @@
 // clasifique y muestre en consola la actividad asignada al Padawan
 
 //declaracion de funcion principal
-function crearPadawan(nombre, planeta, edad, estatura, clasificarPadwan) {
-  setTimeout(function () {
-    //logica de la funcion principal
-    let padawan = {
-      nombre,
-      planeta,
-      edad,
-      estatura,
-    };
-    clasificarPadwan(padawan);
-  }, 2000);
-}
+// function crearPadawan(nombre, planeta, edad, estatura, clasificarPadwan) {
+//   setTimeout(function () {
+//     //logica de la funcion principal
+//     let padawan = {
+//       nombre,
+//       planeta,
+//       edad,
+//       estatura,
+//     };
+//     clasificarPadwan(padawan);
+//   }, 2000);
+// }
 
-//llamar a la funcion principal
-crearPadawan("grogu", "yodora", 10, 30, function (padawan) {
-  if (padawan.edad < 15) {
-    console.log(
-      `${padawan.nombre} tienes ${padawan.edad} años vas a la clase manejo de la fuerza`
-    );
-  }else{
-    console.log(
-        `${padawan.nombre} tienes ${padawan.edad} años vas a la clase manejo del sable de luz`)
-  }
-});
+// //llamar a la funcion principal
+// crearPadawan("grogu", "yodora", 10, 30, function (padawan) {
+//   if (padawan.edad < 15) {
+//     console.log(
+//       `${padawan.nombre} tienes ${padawan.edad} años vas a la clase manejo de la fuerza`
+//     );
+//   }else{
+//     console.log(
+//         `${padawan.nombre} tienes ${padawan.edad} años vas a la clase manejo del sable de luz`)
+//   }
+// });
 
 //Funcion flecha
 
